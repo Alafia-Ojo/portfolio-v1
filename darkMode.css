@@ -1,0 +1,31 @@
+:root{
+    --mainColor: #17191b;
+  }
+  
+
+  body {
+    color: #fff;
+
+  }
+
+  .navigation {
+    color: #eee;
+  }
+
+  .primary-navigation a {
+    
+    color: #eee;
+    
+  
+  }
+
+  .fa-github,
+  .logo {
+    color: rgb(255, 255, 255);
+  }
+  
+
+  .contact-button {
+    
+    color: rgba(255, 255, 255, 0.849);
+  }
