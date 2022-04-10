@@ -354,7 +354,7 @@ footer {
     width: 2rem;
     z-index: 9999;
     background-color: transparent;
-    background-image: url("open.svg");
+    background-image: url("images/open.svg");
     background-repeat: no-repeat;
     aspect-ratio: 1;
     border: 0;
@@ -366,7 +366,7 @@ footer {
   .mobile-nav-toggle[aria-expanded="true"] {
     position: fixed;
     background-color: transparent;
-    background-image: url("icons8-close(1).svg");
+    background-image: url("images/icons8-close(1).svg");
     width: 2rem;
   }
 
