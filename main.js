@@ -8,7 +8,7 @@ const textArray = [
   "Sofware Engineer",
   "Blockchain Engineer",
 ];
-const typingDelay = 200;
+const typingDelay = 100;
 const erasingDelay = 60;
 const newTextDelay = 2000; // Delay between current and next text
 let textArrayIndex = 0;

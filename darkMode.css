@@ -29,3 +29,23 @@
     
     color: rgba(255, 255, 255, 0.849);
   }
+
+  .box {
+    background: rgba(8, 7, 78, 0.685);
+  }
+
+  .box::after {
+    background: rgb(2, 2, 2);
+  }
+
+  .content_2 a {
+   
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  
+  }
+.cursor {
+
+
+  background-color: rgb(255, 255, 255);
+}
