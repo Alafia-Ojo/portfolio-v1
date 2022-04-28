@@ -1,5 +1,5 @@
 :root{
-    --mainColor: #17191b;
+    --mainColor: hsl(225, 37%, 10%);
   }
   
 
@@ -48,4 +48,16 @@
 
 
   background-color: rgb(255, 255, 255);
+}
+
+.q .p {
+  padding: 3px;
+  background: linear-gradient(180deg,hsl(0, 100%, 60%),hsl(60, 100%, 40%));
+  cursor: pointer;
+  color: white;
+  border-radius: 25px;
+}
+
+.about-section-img {
+  filter: brightness(.8) contrast(1.2);
 }

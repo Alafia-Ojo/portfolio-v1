@@ -166,6 +166,14 @@ body {
   border-radius: 50%;
 }
 
+.q .p {
+  padding: 3px;
+  background: linear-gradient(180deg,hsl(240, 100%, 10%),hsl(0, 0%, 50%));
+  
+  color: white;
+  border-radius: 25px;
+}
+
 button {
   padding: 2px 2px;
   cursor: pointer;
