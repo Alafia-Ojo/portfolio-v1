@@ -76,64 +76,79 @@ navToggle.addEventListener("click", () => {
   }
 });
 
-
 // LIGHT AND DARK MODE SWITCHING
 
+// const v = document.getElementById("light");
 
-const v = document.getElementById("light")
+// v.addEventListener("click", () => {
+//   document.getElementById("circle").style.display = "block";
+//   document.getElementById("crescent").style.display = "none";
+//   document.getElementById("light").style.display = "none";
+//   document.getElementById("dark").style.display = "block";
+// });
 
-v.addEventListener("click", () => {
-  document.getElementById('circle').style.display = "block";
-  document.getElementById('crescent').style.display = "none";
-  document.getElementById('light').style.display = "none";
-  document.getElementById('dark').style.display = "block";
-})
+// const y = document.getElementById("dark");
 
+// y.addEventListener("click", () => {
+//   document.getElementById("crescent").style.display = "block";
+//   document.getElementById("circle").style.display = "none";
+//   document.getElementById("dark").style.display = "none";
+//   document.getElementById("light").style.display = "block";
+// });
 
-const y = document.getElementById("dark")
+// let itheme = localStorage.getItem("theme", switchTheme);
 
-y.addEventListener("click", () => {
-  document.getElementById('crescent').style.display = "block";
-  document.getElementById('circle').style.display = "none";
-  document.getElementById('dark').style.display = "none";
-  document.getElementById('light').style.display = "block"
-})
+// if (itheme == null) {
+//   setTheme("light");
+// } else {
+//   setTheme(itheme);
+// }
 
+// let themeDots = document.getElementsByClassName("theme-dot");
 
+// for (var i = 0; themeDots.length > i; i++) {
+//   themeDots[i].addEventListener("click", function () {
+//     let mode = this.dataset.mode;
 
+//     setTheme(mode);
+//   });
+// }
 
+// function setTheme(mode) {
+//   if (mode == "light") {
+//     document.getElementById("theme-style").href = "style.css";
+//     document.getElementById("light").style.display = "none";
+//   }
 
+//   if (mode == "black") {
+//     document.getElementById("theme-style").href = "darkMode.css";
+//     document.getElementById("dark").style.display = "none";
+//   }
 
-let theme = localStorage.getItem('theme')
+//   localStorage.setItem("theme", mode);
+// }
 
-if(theme == null){
-	setTheme('light')
-}else{
-	setTheme(theme)
+var themeSwitcher = document.querySelector(".switch input");
+
+var currentTheme = localStorage.getItem("theme");
+
+if (currentTheme) {
+  document.documentElement.setAttribute("data-theme", currentTheme);
+
+  if (currentTheme === "dark") {
+    themeSwitcher.checked = true;
+  }
 }
 
-let themeDots = document.getElementsByClassName('theme-dot')
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    
 
-
-for (var i=0; themeDots.length > i; i++){
-	themeDots[i].addEventListener('click', function(){
-		let mode = this.dataset.mode
-		
-		setTheme(mode)
-	})
+    localStorage.setItem("theme", "light");
+  }
 }
 
-function setTheme(mode){
-	if(mode == 'light'){
-		document.getElementById('theme-style').href = 'style.css'
-    document.getElementById('light').style.display = "none";
-	}
-
-	if(mode == 'black'){
-		document.getElementById('theme-style').href = 'darkMode.css'
-    document.getElementById('dark').style.display = "none";
-	}
-
-
-	localStorage.setItem('theme', mode)
-}
+themeSwitcher.addEventListener("change", switchTheme);

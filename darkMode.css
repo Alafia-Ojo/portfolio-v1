@@ -1,10 +1,12 @@
 :root{
     --mainColor: hsl(225, 37%, 10%);
+    
   }
   
 
   body {
     color: #fff;
+    font-weight: 350;
 
   }
 
@@ -14,7 +16,7 @@
 
   .primary-navigation a {
     
-    color: #eee;
+    color: #eeee;
     
   
   }
