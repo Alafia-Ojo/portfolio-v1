@@ -125,7 +125,7 @@ navToggle.addEventListener("click", () => {
 //     document.getElementById("dark").style.display = "none";
 //   }
 
-//   localStorage.setItem("theme", mode);
+//   localStorage.setItem("theme", mode)
 // }
 
 var themeSwitcher = document.querySelector(".switch input");
