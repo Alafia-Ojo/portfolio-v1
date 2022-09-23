@@ -17,21 +17,14 @@
     
     
   </head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYCYS7BT2V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RYCYS7BT2V');
-</script>
+  
   <body>
 
   
     <header class="primary-header flex">
       
       <div class="logo_div">
-        <h1 class="logo">PANDACODES</h1>
+        <h1 class="logo">PandaScript</h1>
           
         <div class="content">
           <!-- <div  aria-expanded="false" class="circle" id="circle"></div>
@@ -90,7 +83,7 @@
         </ul>
       </nav>
     </header>
-    <div class="navigation">
+    <div class="navigation hidden">
       
       <div class="h">
         <h1 class="sentence">
@@ -106,14 +99,21 @@
       </div>
 
       
-        <a target="_blank" href="resume.pdf">
-          <button class="contact-button">Download Resume</button>
+        <a target="_blank" id="ca" href="resume.pdf">
+       
+<div class="contact-button-shadow">        
+           <div class="contact-button"><p>Download Resume<p>
+            <div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+             
+          </div>
+          </div>  
         </a>
      
       
     </div>
 
-    <div class="about-section" id="about-section">
+    <div class="about-section hidden" id="about-section">
       <div>
         <h1>About Me</h1>
         <br />
@@ -144,7 +144,7 @@
     </div>
   </div>
 
-    <div class="skills-section" id="skills-section">
+    <div class="skills-section hidden" id="skills-section">
       <div>
         <h1>Skills & Experience</h1>
         <br />
@@ -169,7 +169,7 @@
       </div>
     </div>
 
-    <div class="project-section" id="project-section">
+    <div class="project-section hidden" id="project-section">
       <h1>Project</h1>
       <div class="project-section-grid">
         <div>

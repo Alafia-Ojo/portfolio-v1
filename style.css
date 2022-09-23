@@ -152,7 +152,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 100vh;
 
   color: rgba(0, 0, 0, 0.774);
   font-size: 20px;
@@ -206,22 +206,40 @@ button {
 button:hover {
 }
 
+#ca {
+  text-decoration: none;
+}
+
 button p {
   font-family: monospace;
   font-weight: 700;
 }
+.contact-button-shadow
+{border:1px solid var(--accentColor);
+  max-width: 300px;
+height: 60px;
+padding-left: 30px;
+padding-top: 10px;
+}
 
 .contact-button {
-  padding: 10px;
-  margin-top: 20px;
+width: 300px;
+color: var(--accentColor);
 
-  height: 60px;
-  font-weight: 600;
-  font-size: 20px;
-  background-color: rgba(0, 51, 128, 0.027);
-  border: 2px solid var(--accentColor);
-  cursor: pointer;
-  color: var(--cb);
+border:1.5px solid #17a2b8;
+background-color: transparent;
+padding:15px;
+position: relative;
+}
+
+.contact-button-shadow:hover {
+  background-color: var(--accentColor);
+  color: white;
+  transition: 1s;
+}
+
+.contact-button:hover {
+  color: white;
 }
 
 /* SECOND SECTION */
@@ -237,7 +255,7 @@ button p {
   padding: 20px;
   font-size: 20px;
   margin: 0 100px 0 110px;
-  min-height: 50vh;
+  min-height: 100vh;
 }
 
 .box {
@@ -352,7 +370,7 @@ button p {
 
   padding: 20px;
   font-size: 20px;
-  min-height: 50vh;
+  min-height: 100vh;
   margin: 0 100px 0 110px;
 }
 
@@ -372,7 +390,7 @@ ul {
 
 /* PROJECT SECTION */
 .project-section {
-  min-height: 50vh;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -698,4 +716,18 @@ input.cmn-toggle-round:checked + label:before {
 }
 input.cmn-toggle-round:checked + label:after {
   margin-left: 30px;
+}
+
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s ease-in;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
