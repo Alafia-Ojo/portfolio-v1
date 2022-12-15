@@ -5,19 +5,19 @@
 :root {
   --mainColor: #fff;
   --accentColor: rgb(196, 94, 12);
- --navCol: #333;
- --content2b: #333;
- --content2c: #fff;
- --bodyC: rgb(26, 24, 24);
- --cb: rgba(0, 0, 0, 0.849);
+  --navCol: #333;
+  --content2b: #333;
+  --content2c: #fff;
+  --bodyC: rgb(26, 24, 24);
+  --cb: rgba(0, 0, 0, 0.849);
 }
 
 [data-theme="dark"] {
   --cb: rgba(226, 220, 220, 0.849);
   --mainColor: hsl(225, 37%, 10%);
-  
+
   --navCol: #fff;
-  --content2b:rgb(12, 10, 10);
+  --content2b: rgb(12, 10, 10);
   --content2c: rgb(189, 182, 182);
   --bodyC: rgb(226, 226, 226);
 }
@@ -97,7 +97,6 @@ body {
 .logo_div {
   display: flex;
   align-items: center;
-  
 }
 
 @media (max-width: 1024px) {
@@ -167,7 +166,7 @@ body {
   align-items: center;
   display: flex;
   text-align: center;
-color: var(--bodyC);
+  color: var(--bodyC);
   position: relative;
 }
 
@@ -192,8 +191,8 @@ color: var(--bodyC);
 
 .q .p {
   padding: 3px;
-  background: linear-gradient(180deg,hsl(240, 100%, 10%),hsl(0, 0%, 50%));
-  
+  background: linear-gradient(180deg, hsl(240, 100%, 10%), hsl(0, 0%, 50%));
+
   color: white;
   border-radius: 25px;
 }
@@ -214,22 +213,22 @@ button p {
   font-family: monospace;
   font-weight: 700;
 }
-.contact-button-shadow
-{border:1px solid var(--accentColor);
+.contact-button-shadow {
+  border: 1px solid var(--accentColor);
   max-width: 300px;
-height: 60px;
-padding-left: 30px;
-padding-top: 10px;
+  height: 60px;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 
 .contact-button {
-width: 300px;
-color: var(--accentColor);
+  width: 300px;
+  color: var(--accentColor);
 
-border:1.5px solid #17a2b8;
-background-color: transparent;
-padding:15px;
-position: relative;
+  border: 1.5px solid #17a2b8;
+  background-color: transparent;
+  padding: 15px;
+  position: relative;
 }
 
 .contact-button-shadow:hover {
@@ -606,7 +605,8 @@ footer {
   margin: 0.5rem auto;
 }
 
-/* Top */d
+/* Top */
+d
 
 /* Middle */
 .content {
@@ -709,7 +709,7 @@ input.cmn-toggle-round + label:after {
   background-color: rgb(14, 21, 59);
   border-radius: 100%;
   box-shadow: 0 2px 5px rgba(12, 12, 41, 0.3);
-  transition:  0.4s;
+  transition: 0.4s;
 }
 input.cmn-toggle-round:checked + label:before {
   background-color: #354050;
@@ -717,7 +717,6 @@ input.cmn-toggle-round:checked + label:before {
 input.cmn-toggle-round:checked + label:after {
   margin-left: 30px;
 }
-
 
 .hidden {
   opacity: 0;
